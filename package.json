@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/EventBooking/angular-common-filters#readme",
   "scripts": {
-    "test": "tsc:tests:w & karma start",
+    "pretest": "npm run tsc:tests",
+    "test": "karma start",
     "postinstall": "bower install & typings install",
     "tsc": "tsc -p src",
     "tsc:w": "tsc -p src -w",
@@ -23,7 +24,8 @@
     "bower": "bower",
     "gulp": "gulp",
     "typings": "typings",
-    "start": "lite-server"
+    "start": "lite-server",
+    "karma": "karma"
   },
   "devDependencies": {
     "bower": "^1.7.7",
