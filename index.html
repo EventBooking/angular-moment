@@ -33,26 +33,12 @@
             <div>hours: {{vm.hoursAgo | timeago}}</div>
             <div>days: {{vm.daysAgo | timeago}}</div>
         </div>
-        <div class="filter-tests">
-            <h2>Money Filters</h2>
-            
-            <h3>value | money</h3>
-            <div>decimal (default currency): {{vm.decimalMoney | money}}</div>
-            <div>decimal with code: {{vm.decimalMoney | money: vm.codeMoney }}</div>
-            <div>money object: {{vm.moneyObject | money }}</div>
-            <div>abbrev K: {{vm.moneyObject1k | money: {abbrev: true} }}</div>
-            <div>abbrev M: {{vm.moneyObject1m | money: {abbrev: true} }}</div>
-            <div>abbrev M @ 1M: {{vm.moneyObjectAt1m | money: {abbrev: true} }}</div>
-        </div>
         
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-typescript-module/dist/angular-typescript-module.js"></script>
         <script type="text/javascript" src="bower_components/moment/moment.js"></script>
         <script type="text/javascript" src="bower_components/twix/dist/twix.js"></script>
-        <script type="text/javascript" src="bower_components/accounting.js/accounting.js"></script>
-        <script type="text/javascript" src="bower_components/currency-symbol.js/currency.js"></script>
-		<script type="text/javascript" src="dist/angular-moment-filters.debug.js"></script>
-		<script type="text/javascript" src="dist/angular-money-filters.debug.js"></script>
+		<script type="text/javascript" src="dist/angular-moment.js"></script>
 		<script type="text/javascript" src="demo/app.js"></script>
         <script type="text/javascript" src="demo/controller.js"></script>
 	</body>

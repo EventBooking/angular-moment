@@ -1,4 +1,4 @@
-function testcontroller() {
+function TestController() {
     this.now = moment().format();
     this.start = moment().format();
     this.end = moment(this.start).add('3','d').add('3','h').format();
@@ -25,4 +25,4 @@ function testcontroller() {
     }
 }
 
-angular.module("demo").controller("testcontroller", testcontroller);
+angular.module("demo").controller("testcontroller", TestController);
