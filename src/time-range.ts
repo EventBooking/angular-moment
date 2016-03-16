@@ -5,8 +5,8 @@ module MomentModule {
 
     class TimeRangeFilter implements ITimeRangeFilter {
         filter(start, end, options) {
-            if (start == null)
-                return null;
+            if (start == null || end == null)
+                return "";
 
             if (!options) options = {};
             options.hideDate = true;
