@@ -11,6 +11,7 @@
         "../typings/main.d.ts",
         "../dist/angular-moment.d.ts",
         "date-range.tests.ts",
+        "time-range.tests.ts",
         "time-ago.tests.ts"
     ],
     "ignore": [

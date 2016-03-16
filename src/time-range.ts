@@ -10,13 +10,19 @@ module MomentModule {
 
             if (!options) options = {};
             options.hideDate = true;
-            
-            var mStart = moment(start);
-            var mEnd = moment(end);
+
+            var mStart = this.getMoment(start);
+            var mEnd = this.getMoment(end);
+
             if (mStart.isSame(mEnd))
                 mEnd = mEnd.add(1, 'millisecond'); // bug in twix
-                
+
             return mStart.twix(mEnd, options.allDay).format(options);
+        }
+
+        getMoment(value) {
+            var m = (value instanceof Date) ? moment(value.getTime()) : moment(value, "HH:mm:ss");
+            return m;
         }
     }
 
