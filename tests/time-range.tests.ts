@@ -18,6 +18,14 @@ describe('time-range', () => {
 
         chai.expect(result).to.equal("8 AM - 2 PM");
     });
+    
+    it('formats datetime strings', () => {
+        var start = "2016-03-16T01:00:00";
+        var end = "2016-03-16T02:00:00";
+        var result = $filter(start, end);
+
+        chai.expect(result).to.equal("1 - 2 AM");
+    });
 
     it('formats iso times', () => {
         var start = "8:00:00";
@@ -25,6 +33,14 @@ describe('time-range', () => {
         var result = $filter(start, end);
 
         chai.expect(result).to.equal("8 AM - 2 PM");
+    });
+    
+    it('removed redunant AM or PM', () => {
+        var start = "8:00:00";
+        var end = "9:00:00";
+        var result = $filter(start, end);
+
+        chai.expect(result).to.equal("8 - 9 AM");
     });
 
     it('html', () => {

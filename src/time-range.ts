@@ -21,7 +21,9 @@ module MomentModule {
         }
 
         getMoment(value) {
-            var m = (value instanceof Date) ? moment(value.getTime()) : moment(value, "HH:mm:ss");
+            var isoTime = "HH:mm:ss",
+                isoDate = "YYYY-MM-DDTHH:mm:ss";
+            var m = (value instanceof Date) ? moment(value.getTime()) : moment(value, [isoDate, isoTime]);
             return m;
         }
     }
