@@ -24,10 +24,10 @@ module.exports = function(config) {
             'dist/**/*.css',
             'demo/**/*.css',
             
-            'bower_components/moment/moment.js',
-            'bower_components/twix/dist/twix.js',
-            'bower_components/angular/angular.js',
-            'bower_components/angular-typescript-module/dist/angular-typescript-module.js',
+            'node_modules/moment/moment.js',
+            'node_modules/twix/dist/twix.js',
+            'node_modules/angular/angular.js',
+            'node_modules/angular-typescript-module/dist/angular-typescript-module.js',
             'node_modules/angular-mocks/angular-mocks.js',
             
             'dist/**/*.js',
