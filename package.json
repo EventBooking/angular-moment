@@ -1,6 +1,6 @@
 {
   "name": "angular-moment",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "./dist/angular-moment.js",
   "typings": "./dist/angular-moment.d.ts",
