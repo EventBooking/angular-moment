@@ -7,10 +7,19 @@
         "inlineSourceMap": true,
         "inlineSources": true,
         "target": "es5",
-        "out": "dist/angular-moment.js"
+        "out": "dist/angular-moment.js",
+        "baseUrl": "../",
+        "typeRoots": [
+            "../node_modules/@types",
+            "../node_modules"
+        ],
+        "types": [
+            "angular",
+            "angular-typescript-module"
+        ]
     },
     "files": [
-        "../typings/main.d.ts",
+        "moment.d.ts",
         "twix.d.ts",
         "app.ts",
         "date-range.ts",
@@ -19,7 +28,7 @@
         "time-ago.ts",
         "time-range.ts"
     ],
-    "ignore": [
-        "../typings"
+    "exclude": [
+        "node_modules"
     ]
 }

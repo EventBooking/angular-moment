@@ -5,16 +5,27 @@
         "removeComments": false,
         "inlineSourceMap": true,
         "inlineSources": true,
-        "target": "es5"
+        "target": "es5",
+        "baseUrl": "../",
+        "typeRoots": [
+            "../node_modules/@types",
+            "../node_modules"
+        ],
+        "types": [
+            "angular",
+            "angular-mocks",
+            "angular-typescript-module",
+            "mocha",
+            "chai",
+            "sinon"
+        ]
     },
     "files": [
-        "../typings/main.d.ts",
+        "../src/moment.d.ts",
+        "../src/twix.d.ts",
         "../dist/angular-moment.d.ts",
         "date-range.tests.ts",
         "time-range.tests.ts",
         "time-ago.tests.ts"
-    ],
-    "ignore": [
-        "../typings"
     ]
 }
